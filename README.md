@@ -1,4 +1,4 @@
-<h1>qlalchemy-challenge</h1><hr>
+<h1>Sqlalchemy-challenge</h1><hr>
 
 <h2>Challenge 10 - SQLAlchemy and Flask</h2>
 
