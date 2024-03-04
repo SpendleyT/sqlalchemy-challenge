@@ -117,7 +117,12 @@ def get_temp_from(start):
         where(Measures.station == BUSIEST_STATION).\
         group_by(Measures.date).all()
     for row in results:
-        records.append({"date": row.date, "min_temp": row.min, "max_temp": row.max, "avg_temp": row.avg})
+        records.append({
+            "date": row.date, 
+            "min_temp": row.min, 
+            "max_temp": row.max, 
+            "avg_temp": row.avg
+        })
     return jsonify(records)
 
 #get min, max and avg temps between <start> and <end>
